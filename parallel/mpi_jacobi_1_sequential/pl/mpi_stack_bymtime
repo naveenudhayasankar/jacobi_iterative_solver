@@ -1,0 +1,19 @@
+#proc areadef
+  rectangle: 1 1 6 4
+  xrange: -1 2
+  yrange:  0 1.21317e-02
+  xaxis.stubs: inc
+  yaxis.stubs: inc
+  xaxis.stubrange: 0 1
+  xaxis.stubvert: yes
+  xaxis.label: sorted index
+  xaxis.labeldistance: 0.5
+  yaxis.label: time in seconds
+                                                                                
+#proc getdata
+data:
+0 0 3.01195e+01 2.16917e+01 8.19668e+00 1.21317e-02 30.1073683 
+ 
+#proc legend
+  location: max+0.4 max
+  seglen: 0.3

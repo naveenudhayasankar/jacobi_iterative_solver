@@ -1,0 +1,59 @@
+#proc areadef
+  rectangle: 1 1 6 4
+  xrange: -1 11
+  yrange:  0 477.1576
+  xaxis.stubs: inc
+  yaxis.stubs: inc
+  xaxis.stubrange: 0 10
+  xaxis.stubvert: yes
+  xaxis.label: MPI rank
+  xaxis.labeldistance: 0.5
+  yaxis.label: time in seconds
+                                                                                
+#proc getdata
+data:
+0 3 5.19544e+03 4.56826e+02 1.91696e+01 5.18531e+03 10.1299999999992
+1 4 5.19527e+03 4.57534e+02 1.84462e+01 5.18511e+03 10.1600000000008
+2 5 5.19535e+03 4.56722e+02 1.92668e+01 5.18504e+03 10.3100000000004
+3 9 5.19533e+03 4.57123e+02 1.88733e+01 5.18502e+03 10.3099999999995
+4 0 5.19536e+03 4.56867e+02 1.91220e+01 5.18502e+03 10.3399999999992
+5 8 5.19534e+03 4.57494e+02 1.85029e+01 5.18500e+03 10.3400000000001
+6 2 5.19539e+03 4.56802e+02 1.91947e+01 5.18492e+03 10.4700000000003
+7 1 5.19535e+03 4.56407e+02 1.95786e+01 5.18491e+03 10.4400000000005
+8 6 5.19527e+03 4.57579e+02 1.84095e+01 5.18488e+03 10.3900000000003
+9 7 5.19542e+03 4.56685e+02 1.93168e+01 5.18440e+03 11.0200000000004
+                                                                                
+ #proc bars
+  lenfield: 4
+  locfield: 2
+  color: blue
+  legendlabel: user 
+  barwidth: 
+  outline: no
+  #saveas A
+
+ #proc bars
+  #clone: A
+  lenfield: 5
+  color: yellow
+  legendlabel: system
+  stackfields: *
+                                                                                
+#proc lineplot
+ xfield: 2
+ yfield: 3
+ legendlabel: wall
+ linedetails: color=red
+ sort: yes
+
+#proc lineplot
+ xfield: 2
+ yfield: 6
+ legendlabel: mpi
+ linedetails: color=green
+ sort: yes
+
+#proc legend
+  location: max+0.4 max
+  seglen: 0.3
+

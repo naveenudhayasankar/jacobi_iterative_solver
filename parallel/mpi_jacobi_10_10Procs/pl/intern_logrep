@@ -1,0 +1,45 @@
+#proc areadef
+  rectangle: 1 1 6 4
+  xrange: -1 11
+  yrange: 0 3340600000
+  xaxis.stubs: inc
+  yaxis.stubs: inc
+  xaxis.label: MPI rank
+  yaxis.label: time (seconds)
+  xaxis.stubrange: 0 10
+  xaxis.stubvert: yes
+  yscaletype: log
+                                                                                
+#proc getdata
+data:
+0 0 1670310352.586222 1.6703e+09 -1.0000e+00 0 
+1 1 1670310352.608423 1.6703e+09 -1.0000e+00 0 
+2 2 1670310352.630026 1.6703e+09 -1.0000e+00 0 
+3 3 1670310352.692318 1.6703e+09 -1.0000e+00 0 
+4 4 1670310352.552775 1.6703e+09 -1.0000e+00 0 
+5 5 1670310352.617157 1.6703e+09 -1.0000e+00 0 
+6 6 1670310352.563764 1.6703e+09 -1.0000e+00 0 
+7 7 1670310352.713848 1.6703e+09 -1.0000e+00 0 
+8 8 1670310352.649640 1.6703e+09 -1.0000e+00 0 
+9 9 1670310352.639095 1.6703e+09 -1.0000e+00 0 
+                                                                                
+                                                                                
+#proc lineplot
+  xfield: 1
+  yfield: 4
+  legendlabel: ipm_syslog
+  linedetails: color=red
+  sort: yes
+                                                                                
+#proc lineplot
+  xfield: 1
+  yfield: 5
+  legendlabel: ipm_report
+  linedetails: color=green
+  sort: yes
+                                                                                
+#proc legend
+  location: max+0.4 max
+//  reverseorder: yes
+  seglen: 0.3
+                                                                                
