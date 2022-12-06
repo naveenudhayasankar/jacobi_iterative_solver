@@ -1,0 +1,28 @@
+********** Solving a system of linear equations with 1 unknowns **********
+********** Solution computed in 2 iterations **********
+********** Error is 0 **********
+********** Runtime is 0.000314144 seconds **********
+********** Solving a system of linear equations with 10 unknowns **********
+********** Solution computed in 39 iterations **********
+********** Error is 0.00399156 **********
+********** Runtime is 0.000365074 seconds **********
+********** Solving a system of linear equations with 100 unknowns **********
+********** Solution computed in 496 iterations **********
+********** Error is 0.00491649 **********
+********** Runtime is 0.0424823 seconds **********
+********** Solving a system of linear equations with 200 unknowns **********
+********** Solution computed in 1061 iterations **********
+********** Error is 0.00493318 **********
+********** Runtime is 0.218961 seconds **********
+********** Solving a system of linear equations with 500 unknowns **********
+********** Solution computed in 2879 iterations **********
+********** Error is 0.00498457 **********
+********** Runtime is 2.17941 seconds **********
+********** Solving a system of linear equations with 1000 unknowns **********
+********** Solution computed in 6104 iterations **********
+********** Error is 0.00499035 **********
+********** Runtime is 17.6005 seconds **********
+********** Solving a system of linear equations with 2000 unknowns **********
+********** Solution computed in 12900 iterations **********
+********** Error is 0.00499609 **********
+********** Runtime is 149.46 seconds **********
